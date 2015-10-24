@@ -28,7 +28,7 @@ public class UC02ConsultarEmpresa {
 		
 	}
 	
-	/*	
+		
 	@Test
 	public void CT01ConsultarEmpresaComSucesso() {
 		empresaDAO.adiciona(empresa);
@@ -36,17 +36,17 @@ public class UC02ConsultarEmpresa {
 		empresaDAO.excluir ("89424232000180");
 		
 	}
-	*/
 	
+	/*
 	@Test
 	public void CT02ConsultarEmpresaComSucesso (){
 		empresaDAO.adiciona(empresa);
 		Empresa empresateste = new Empresa ();
-		empresa.setCnpj("89424232000180");
-		empresa.setNomeDaEmpresa("Pennywise's Circus");
-		empresa.setNomeFantasia("Circo do Pennywise");
-		empresa.setEndereco("Avenida Águia de Haia");
-		empresa.setTelefone("1125634851");
+		empresateste.setCnpj("60409075000152");
+		empresateste.setNomeDaEmpresa("Nestle");
+		empresateste.setNomeFantasia("Comercio de Chocolates");
+		empresateste.setEndereco("Rua Ganges");
+		empresateste.setTelefone("1120173224");
 		empresaDAO.adiciona(empresateste);
 		assertTrue (empresa.equals (empresateste));
 		empresaDAO.excluir (null);
@@ -54,7 +54,7 @@ public class UC02ConsultarEmpresa {
 		
 	}
 	
-	
+	*/
 	
 
 	@AfterClass

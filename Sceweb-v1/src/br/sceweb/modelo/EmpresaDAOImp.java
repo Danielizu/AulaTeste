@@ -36,13 +36,13 @@ public class EmpresaDAOImp implements EmpresaDAO2{
 
 	@Override
 	public Empresa consulta(String cnpj) {
-		// TODO Auto-generated method stub
+	
 		return null;
 	}
 
 	@Override
 	public List consultaEmpresas() {
-		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
