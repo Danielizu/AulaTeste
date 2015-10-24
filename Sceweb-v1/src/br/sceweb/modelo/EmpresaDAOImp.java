@@ -6,7 +6,7 @@ import java.sql.SQLException;
 import java.util.List;
 
 
-public class EmpresaDAOImp implements EmpresaDAO{
+public class EmpresaDAOImp implements EmpresaDAO2{
 	
 
 	public int adiciona(Empresa empresa) {
@@ -14,7 +14,7 @@ public class EmpresaDAOImp implements EmpresaDAO{
 		PreparedStatement ps;
 		int codigoRetorno = 0;
 		
-		try (Connection con = new FabricadeConexoes().getConnection()){
+		try (Connection con = new FabricaDeConexoes().getConnection()){
 			ps = con.prepareStatement("INSERT into Empresa(cnpj, nomeDaEmpresa, nomeFantasia, endereco, telefone) VALUES (?,?,?,?,?);");
 			ps.setString(1, empresa.getCnpj());
 			ps.setString(2, empresa.getNomeDaEmpresa());
@@ -58,7 +58,7 @@ public class EmpresaDAOImp implements EmpresaDAO{
 		int codigoRetorno = 0;
 
 		PreparedStatement ps;
-		try (Connection con = new FabricadeConexoes().getConnection()){
+		try (Connection con = new FabricaDeConexoes().getConnection()){
 			ps = con.prepareStatement("Delete from Empresa where cnpj = ?;");
 			ps.setString(1, cnpj);
 			codigoRetorno = ps.executeUpdate();

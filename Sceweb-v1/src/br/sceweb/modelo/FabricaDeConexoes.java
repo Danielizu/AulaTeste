@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-public class FabricadeConexoes {
+public class FabricaDeConexoes {
 	
 	public Connection getConnection(){
 		String url = "jdbc:mysql://localhost/sceweb";

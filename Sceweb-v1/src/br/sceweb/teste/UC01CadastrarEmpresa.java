@@ -36,7 +36,8 @@ public class UC01CadastrarEmpresa {
 	@Test(expected = RuntimeException.class)
 	public void CT02UC01A2Cadastra_empresa_cnpj_ja_cadastrado() {
 		empresaDAO.adiciona(empresa);
-		assertEquals(0, empresaDAO.adiciona(empresa));
+		
+		assertEquals(1, empresaDAO.adiciona(empresa));
 	}
 
 	@Test
