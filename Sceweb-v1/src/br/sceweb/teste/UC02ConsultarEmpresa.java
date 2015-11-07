@@ -19,21 +19,23 @@ public class UC02ConsultarEmpresa {
 		
 		empresaDAO = new EmpresaDAOImp();
 		empresa = new Empresa();
+		empresaDAO.excluir("89424232000180");
 		
 		empresa.setCnpj("89424232000180");
 		empresa.setNomeDaEmpresa("Pennywise's Circus");
 		empresa.setNomeFantasia("Circo do Pennywise");
 		empresa.setEndereco("Avenida Águia de Haia");
 		empresa.setTelefone("1125634851");
+		empresaDAO.adiciona(empresa);
 		
 	}
 	
 		
 	@Test
 	public void CT01ConsultarEmpresaComSucesso() {
-		empresaDAO.adiciona(empresa);
-		assertTrue (empresa.equals (empresaDAO.consultaEmpresas("89424232000180")));
-		empresaDAO.excluir ("89424232000180");
+		//empresaDAO.adiciona(empresa);
+		assertEquals(true,  empresa.equals(empresaDAO.consulta("89424232000180")));
+		//empresaDAO.excluir ("89424232000180");
 		
 	}
 	
