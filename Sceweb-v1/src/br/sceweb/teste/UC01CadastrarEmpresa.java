@@ -20,9 +20,9 @@ public class UC01CadastrarEmpresa {
 		empresa = new Empresa();
 
 		empresa.setCnpj("89424232000180");
-		empresa.setNomeDaEmpresa("Pennywise's Circus");
-		empresa.setNomeFantasia("Circo do Pennywise");
-		empresa.setEndereco("Avenida ¡guia de Haia");
+		empresa.setNomeDaEmpresa("Nintendo");
+		empresa.setNomeFantasia("F√°brica de Jogos");
+		empresa.setEndereco("Mundo da imagina√ß√£o");
 		empresa.setTelefone("1125634851");
 	}
 
@@ -48,7 +48,7 @@ public class UC01CadastrarEmpresa {
 			empresa2.setCnpj("894242320018065");
 			fail("deveria disparar uma exception");
 		} catch (Exception e) {
-			assertEquals("CNPJ inv·lido!", e.getMessage());
+			assertEquals("CNPJ inv√°lido!", e.getMessage());
 		}
 
 	}
@@ -60,7 +60,7 @@ public class UC01CadastrarEmpresa {
 			empresa2.setNomeDaEmpresa("");
 			fail("deveria disparar uma exception");
 		} catch (Exception e) {
-			assertEquals("nome da empresa inv·lido!", e.getMessage());
+			assertEquals("nome da empresa inv√°lido!", e.getMessage());
 		}
 	}
 
