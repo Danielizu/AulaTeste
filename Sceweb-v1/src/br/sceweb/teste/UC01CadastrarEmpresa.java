@@ -20,9 +20,9 @@ public class UC01CadastrarEmpresa {
 		empresa = new Empresa();
 
 		empresa.setCnpj("89424232000180");
-		empresa.setNomeDaEmpresa("Nintendo");
-		empresa.setNomeFantasia("Fábrica de Jogos");
-		empresa.setEndereco("Mundo da imaginação");
+		empresa.setNomeDaEmpresa("Sony");
+		empresa.setNomeFantasia("Fabrica de Jogos");
+		empresa.setEndereco("Mundo da imaginacao");
 		empresa.setTelefone("1125634851");
 	}
 
